@@ -1,0 +1,192 @@
+﻿@model IEnumerable<Nail_Web.Models.ProductColor>
+@{
+    ViewData["Title"] = "Product Detail";
+}
+
+@section Css {
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="~/css/common.css">
+  <link rel="stylesheet" href="~/css/reponsiveCommon.css">
+  <link rel="stylesheet" href="~/css/reponsiveMenu.css">
+  <link rel="stylesheet" href="~/css/detail.css">
+}
+
+<div class="detail mb-5">
+  <div class="container">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-product border-0  d-flex justify-content-center mt-5">
+          <div class="slideshow w-100 mx-auto d-flex justify-content-center" id="slick-detail">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center">
+       <div class="ms-5 mt-3 title-image">
+         <h5 class="fs-4 mt-4 mb-4 text-black fw-normal">Sơn Móng Tay Xinh Xắn Romand Mood Pebble Nail 7g</h5>
+         <span class="text-danger fw-bold fs-5">109,000 VND</span><span
+         class="text-decoration-line-through text-secondary ms-5">160,000 VND</span>
+         <p class="text-uppercase mt-4 fs-5">Chọn màu</p>
+         <div class="choose-color mt-3" id="choose-color">
+            @{
+               <button id="color-${item.number}"  style="background-color: ${item.style}; " class="colors mx-2 py-2 px-2 text-white rounded" onclick="handevend_${item.number}()"> ${item.color} </button>
+            }
+         </div>
+         <p class="text-uppercase mt-4 fs-5">Số lượng</p>
+         <div class="d-flex button-group-count">
+           <button onclick="minius()" class="fw-bold fs-5 text-black">-</button>
+           <button id="count"></button>
+           <button onclick="add()" class="fw-bold fs-5 text-black">+</button>
+         </div>
+         <div class="cart-bought">
+           <button class="buy text-uppercase mt-4 fs-5 py-2 px-3 mx-1 text-white">mua ngay</button>
+           <button class=" cart text-uppercase mt-4 fs-5 py-2 px-3 mx-2 text-white">Thêm vào giỏ hàng</button>
+         </div>
+         <div class="take-care mt-4">
+           <h5 class="text-uppercase fw-bold fs-4 mb-2 text-black">tổng đài hỗ trợ</h5>
+           <p class="text-black fw-normal fs-5 mt-3">Hotline mua hàng: <a class="text-decoration-none text-black fw-bold" href="#">1800192</a> (Miễn phí)</p>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="view-more w-100">
+    <h5 class="text-uppercase fw-bold fs-4 mb-2 text-black ms-5 mt-5">Có thể bạn quan tâm</h5>
+    <div class="slick-product">
+      <div class="slide-product bg-white mx-auto" id="image-slide">
+      </div>
+    </div>
+  </div>
+  <h5 class="text-uppercase fw-bold fs-4 mb-2 text-black ms-5 mt-5">Mô tả sản phẩm</h5>
+  <div class="d-flex d-flex justify-content-center introduction">
+   <div class="container">
+     <div><p><span>Sơn Móng Tay Xinh Xắn Romand Mood Pebble Nail</span> là sơn móng tay đến từ
+       <span>thương hiệu Romand</span> có kết cấu chất sơn mềm mại, chứa công thức “Clear Formula” giữ nguyên độ trong
+       trẻo của màu kể cả khi bạn apply nhiều lớp giúp lớp sơn móng tay được bền màu, giữ màu lâu trôi cùng chất lượng
+       màu sắc cực tốt sẽ mang lại cho đôi bàn tay của bạn vẻ ngoài sang trọng, dịu dàng</p>
+      <div class="image-detail text-center">
+        <img src="../../img/rom2.jpg" alt="Nnail">
+        <img src="../../img/rom3.jpg" alt="Nnail">
+        <img src="../../img/rom4.jpg" alt="Nnail">
+        <img src="../../img/rom5.jpg" alt="Nnail">
+        <img src="../../img/rom6.jpg" alt="Nnail">
+        <img src="../../img/rom7.jpg" alt="Nnail">
+        <img src="../../img/rom8.jpg" alt="Nnail">
+      </div>
+      </div>
+     <div class="text-left mt-5">
+       <p><span>Thương hiệu: </span>Romand</p>
+       <p><span>Romand </span>là một thương hiệu mỹ phẩm đến từ Hàn Quốc với mong muốn mang đến cho khách hàng những giá
+         trị tuyệt vời nhất qua từng sản phẩm. Với Romand, bạn có thể tìm thấy màu sắc phù hợp hơn với bản thân, tự mình
+         trải nghiệm các bước trang điểm với những sản phẩm makeup chất lượng đến từ Hàn Quốc, giúp khách hàng không chỉ
+         trở nên xinh đẹp hơn mà còn trở thành những người tiêu dùng thông thái nhất</p>
+       <p><span>Xuất xứ thương hiệu: </span>Hàn Quốc</p>
+       <p><span>Sản xuất tại: </span>Hàn Quốc</p>
+       <p><span>Dung tích: </span>7g</p>
+       <p><span>Hạn sử dụng: </span>3 năm kể từ ngày sản xuất/NSX xem trên bao bì (12 tháng sau khi mở nắp) </p>
+     </div>
+   </div>
+  </div>
+</div>
+
+<div class="footer mt-4">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4 logo-icon text-center align-items-center">
+          <div class="navbar-brand fs-2 mx-5 mb-5 fw-normal" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nnail
+          </font></font></div>
+          <p class="text-muted fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since the 1500s, Ipsum vitae sodales vulputate </font></font></p>
+          <div class="icon justify-content-center d-flex">
+            <i class="bi bi-facebook text-primary mx-1"></i>
+            <button class="border-0 rounded-circle bg-danger mx-1 mt-2">
+              <i class="bi bi-instagram fs-5 text-white"></i>
+            </button>
+            <button class="border-0 rounded-circle bg-info mx-1 mt-2">
+              <i class="bi bi-twitter fs-5 text-white"></i>
+            </button>
+            <button class="border-0 rounded-circle bg-primary mx-1 mt-2">
+              <i class="bi bi-vimeo fs-5 text-white"></i>
+            </button>
+            <button class="border-0 rounded-circle bg-danger mx-1 mt-2">
+              <i class="bi bi-youtube fs-5 text-white"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4 quick">
+          <div class="links text-center">
+            <h5 style="font-family: Arial" class="fs-3 text-drank mb-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đường dẫn nhanh</font></font></h5>
+            <div class="title text-center mb-5" style="font-family: Arial">
+              <a style="font-family: Arial" href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giao hàng &nbsp; </font></font></a>
+              <a style="font-family: Arial" href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thông báo pháp lý &nbsp; </font></font></a>
+              <a style="font-family: Arial" href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giới thiệu về chúng tôi &nbsp; </font></font></a>
+              <a style="font-family: Arial" href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thanh toán an toàn
+                &nbsp; </font></font></a>
+              <font style="vertical-align: inherit;"><a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;">Sơ đồ trang web &nbsp; </font></a></font><a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cửa hàng của chúng &nbsp; </font></font></a>
+              <font style="vertical-align: inherit;"><a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;">tôi Tài khoản của &nbsp; </font></a><a href="#" class="text-decoration-none text-muted fw-normal"><font style="vertical-align: inherit;">tôi Liên hệ với chúng tôi</font></a></font><a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"></font></a>
+              <a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"></font></a>
+              <a href="#" class="text-decoration-none text-muted fw-normal"><font style="vertical-align: inherit;"></font></a>
+            </div>
+            <div class="payment text-center mt-5 mb-2">
+              <img src="../../img/103316momopink-logo.png" class="border border-light mx-1" width="35px" height="32px" alt="Nnail">
+              <img src="../../img/zalopay-logo.png" class="border border-light mx-1" width="35px" height="32px" alt="Nnail">
+              <img src="../../img/1495815261-jd08_84586.png" class="mx-1" width="50px" height="30px" alt="Nnail">
+              <img src="../../img/images.png" class="border border-dark mx-1" width="50px" height="30px" alt="Nnail">
+            </div>
+            <div class="text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact">
+            <div class="location d-flex justify-content-start ms-3">
+              <button class="icon rounded-circle bg-white"><i class="bi bi-geo-alt fs-2"></i></button>
+              <div class="title-location ms-5">
+                <h5 style="font-family: Arial" class="fs-5 text-drank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Địa điểm</font></font></h5>
+                <p style="font-family: Arial" class="text-muted fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4005, Điểm kinh doanh bạc tại </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ấn Độ</font></font></p>
+              </div>
+            </div>
+            <div class="location d-flex justify-content-start ms-3 ">
+              <button class="icon rounded-circle bg-white"><i class="bi bi-telephone fs-2"></i></button>
+              <div class="title-location ms-5">
+                <h5 style="font-family: Arial" class="fs-5 text-drank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conact</font></font></h5>
+                <p style="font-family: Arial" class="text-muted fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+91 123456789</font></font></p>
+                <br>
+              </div>
+            </div>
+            <div class="location d-flex justify-content-start ms-3">
+              <button class="icon rounded-circle bg-white"><i class="bi bi-envelope fs-2"></i></button>
+              <div class="title-location ms-5">
+                <h5 style="font-family: Arial" class="fs-5 text-drank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">E-mail</font></font></h5>
+                <p style="font-family: Arial" class="text-muted fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">19130162@Nnail.com</font></font></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script lang="js" type="text/javascript" src="~/js/Common.js"></script>
+<script lang="js" type="text/javascript" src="~/js/detail.js"></script>
+}

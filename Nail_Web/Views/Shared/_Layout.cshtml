@@ -1,0 +1,248 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>@ViewData["Title"]</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  //link css-->
+  @RenderSection("Css")
+</head>
+
+<body>
+    <!--header-->
+<a id="back-to-top" class="text-center"><i class="bi bi-caret-up-fill"></i></a>
+<div class="header justify-content-center">
+  <div class="top-header d-flex justify-content-center"><span
+    class="text-white mt-2">Welcome To Our Beauty Store</span>
+  </div>
+  <div class="top-menu bg-white w-100 mx-auto" id="navbar">
+    <ul class="d-flex list-unstyled justify-content-around">
+      <li class="menus">
+        <div class="dropdow">
+          <div class="container-fluid">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+              <i class="fas fa-list-ul"></i>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active mx-2 fs-5" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown mx-2">
+                    <button
+                      class="nav-link dropdown-toggle dropbtn produce mx-2 fs-5 border-0 bg-white w-100 text-start"
+                      href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Product
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="#">Nail Polish</a>
+                      <li><a class="dropdown-item" href="#">Fake nails</a></li>
+                      <li><a class="dropdown-item" href="#">Salon Essentials</a></li>
+                      <li><a class="dropdown-item" href="#">Nail Brush</a></li>
+                      <li><a class="dropdown-item" href="#">Acrylic</a></li>
+                      <li><a class="dropdown-item" href="#">Glitter</a></li>
+
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown mx-2">
+                    <button
+                      class="nav-link dropdown-toggle dropbtn produce mx-2 fs-5 border-0 bg-white w-100 text-start"
+                      href="#" id="offcanvasNavbarDropdown2" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Sale off
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="#">Nail Polish</a></li>
+                      <li><a class="dropdown-item" href="#">Fake nails</a></li>
+                      <li><a class="dropdown-item" href="#">Fake nails</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown mx-2">
+                    <button
+                      class="nav-link dropdown-toggle dropbtn produce mx-2 fs-5 border-0 bg-white w-100 text-start"
+                      href="#" id="offcanvasNavbarDropdown3x" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      New Product
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="#">Nail Polish</a></li>
+                      <li><a class="dropdown-item" href="#">Fake nails</a></li>
+                      <li><a class="dropdown-item" href="#">Fake nails</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link mx-2 fs-5" href="#">New</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link mx-2 fs-5" href="#">Support Center</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link mx-2 fs-5" href="#">Order tracking</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nnail-logo">
+        <div
+          class="navbar-brand fs-2 fw-normal"
+          href="#">Nnail
+        </div>
+      </li>
+      <li class="menu">
+        <nav class="navbar navbar-expand-lg mx-auto">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active mx-2 fs-5" aria-current="page" asp-controller="Home" asp-action="Index">TRANG CHỦ</a>
+                </li>
+                 <li class="nav-item mx-2">
+                  <a class="nav-link active mx-2 fs-5" aria-current="page" asp-controller="Products" asp-action="Index">SẢN PHẨM</a>
+                </li>
+                 <li class="nav-item mx-2">
+                  <a class="nav-link active mx-2 fs-5" aria-current="page" asp-controller="Products" asp-action="SaleOff">SALE OFF</a>
+                </li>
+                 <li class="nav-item mx-2">
+                  <a class="nav-link active mx-2 fs-5" aria-current="page" asp-controller="Products" asp-action="NewProduct">SẢN PHẨM MỚI</a>
+                </li>
+                 <li class="nav-item mx-2">
+                  <a class="nav-link active mx-2 fs-5" aria-current="page" asp-controller="Home" asp-action="News">TIN TỨC</a>
+                </li>
+                 <li class="nav-item mx-2">
+                  <a class="nav-link active mx-2 fs-5" aria-current="page" asp-controller="Home" asp-action="Contact">LIÊN HỆ</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </li>
+
+      <li class="mt-2 secartson d-flex justify-content-end" id="list-secartson">
+        <ul class="d-flex list-unstyled">
+          <li>
+            <div class="d-flex form">
+              <form class="d-flex">
+                <input class="form-control font-family-sans-serif fw-light" style="display: none;" id="input-search"
+                       type="search"
+                       placeholder="Search..." aria-label="Search">
+                <button class="btn border-0" id="onclick" type="button">
+                  <i class="bi bi-search" onclick="showInput()"></i>
+                </button>
+              </form>
+            </div>
+          </li>
+          <li class="person">
+            <a type="button" class="btn text-decoration-none" asp-controller="MyUsers" asp-action="Index"><i
+              class="bi bi-person-fill"></i></a>
+          </li>
+          <li class="mt-1">
+            <a asp-controller="Bills" asp-action="Cart">
+              <div class="cart d-flex">
+                <i class="bi bi-basket-fill" onclick="yourCart()">
+                </i>
+                <span class="bg-warning rounded-circle text-white position-absolute" id="numberCart">0</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- body -->
+@RenderBody()
+
+<!--footer-->
+  <div class="footer mt-4">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4 logo-icon text-center align-items-center">
+            <div class="navbar-brand fs-2 mx-5 mb-5 fw-normal" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nnail
+            </font></font></div>
+            <p class="text-muted fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since the 1500s, Ipsum vitae sodales vulputate </font></font></p>
+            <div class="icon justify-content-center d-flex">
+              <i class="bi bi-facebook text-primary mx-1"></i>
+              <button class="border-0 rounded-circle bg-danger mx-1 mt-2">
+                <i class="bi bi-instagram fs-5 text-white"></i>
+              </button>
+              <button class="border-0 rounded-circle bg-info mx-1 mt-2">
+                <i class="bi bi-twitter fs-5 text-white"></i>
+              </button>
+              <button class="border-0 rounded-circle bg-primary mx-1 mt-2">
+                <i class="bi bi-vimeo fs-5 text-white"></i>
+              </button>
+              <button class="border-0 rounded-circle bg-danger mx-1 mt-2">
+                <i class="bi bi-youtube fs-5 text-white"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 quick">
+              <!--hotline-->
+            <div class="links text-center">
+              <h5 style="font-family: Arial" class="fs-3 text-drank mb-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đường dẫn nhanh</font></font></h5>
+              <div class="title text-center mb-5" style="font-family: Arial">
+                <a style="font-family: Arial" href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giao hàng &nbsp; </font></font></a>
+                <a style="font-family: Arial" href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thông báo pháp lý &nbsp; </font></font></a>
+                <a style="font-family: Arial" href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giới thiệu về chúng tôi &nbsp; </font></font></a>
+                <a style="font-family: Arial" href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thanh toán an toàn
+                  &nbsp; </font></font></a>
+                <font style="vertical-align: inherit;"><a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;">Sơ đồ trang web &nbsp; </font></a></font><a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cửa hàng của chúng &nbsp; </font></font></a>
+                <font style="vertical-align: inherit;"><a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;">tôi Tài khoản của &nbsp; </font></a><a href="#" class="text-decoration-none text-muted fw-normal"><font style="vertical-align: inherit;">tôi Liên hệ với chúng tôi</font></a></font><a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"></font></a>
+                <a href="#" class="text-decoration-none text-muted fw-normal border-end me-1"><font style="vertical-align: inherit;"></font></a>
+                <a href="#" class="text-decoration-none text-muted fw-normal"><font style="vertical-align: inherit;"></font></a>
+              </div>
+              <div class="payment text-center mt-5 mb-2">
+                <img src="~/img/103316momopink-logo.png" class="border border-light mx-1" width="35px" height="32px" alt="Nnail">
+                <img src="~/img/zalopay-logo.png" class="border border-light mx-1" width="35px" height="32px" alt="Nnail">
+                <img src="~/img/1495815261-jd08_84586.png" class="mx-1" width="50px" height="30px" alt="Nnail">
+                <img src="~/img/images.png" class="border border-dark mx-1" width="50px" height="30px" alt="Nnail">
+              </div>
+              <div class="text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <!--contact-->
+            <div class="contact">
+              <div class="location d-flex justify-content-start ms-3">
+                <button class="icon rounded-circle bg-white"><i class="bi bi-geo-alt fs-2"></i></button>
+                <div class="title-location ms-5">
+                  <h5 style="font-family: Arial" class="fs-5 text-drank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Địa điểm</font></font></h5>
+                  <p style="font-family: Arial" class="text-muted fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4005, Điểm kinh doanh bạc tại </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ấn Độ</font></font></p>
+                </div>
+              </div>
+              <div class="location d-flex justify-content-start ms-3 ">
+                <button class="icon rounded-circle bg-white"><i class="bi bi-telephone fs-2"></i></button>
+                <div class="title-location ms-5">
+                  <h5 style="font-family: Arial" class="fs-5 text-drank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conact</font></font></h5>
+                  <p style="font-family: Arial" class="text-muted fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+91 123456789</font></font></p>
+                  <br>
+                </div>
+              </div>
+              <div class="location d-flex justify-content-start ms-3">
+                <button class="icon rounded-circle bg-white"><i class="bi bi-envelope fs-2"></i></button>
+                <div class="title-location ms-5">
+                  <h5 style="font-family: Arial" class="fs-5 text-drank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">E-mail</font></font></h5>
+                  <p style="font-family: Arial" class="text-muted fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">19130162@Nnail.com</font></font></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+@RenderSection("Scripts")
+</body>
+</html>

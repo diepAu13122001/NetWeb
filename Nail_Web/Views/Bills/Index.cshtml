@@ -1,0 +1,260 @@
+﻿@{
+    ViewData["Title"] = "Payment";
+}
+
+@section Css {
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/payment.css">
+}
+
+<div class="Payment">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="px-5">
+          <div class="tilte">
+            <h1 class="fw-bold fs-2 mt-5">Nnail</h1>
+            <h5 class="fw-600 fs-4 mt-3">Thanh toán</h5>
+          </div>
+          <div class="content mt-3">
+            <h5>Thông tin giao hàng</h5>
+            <form action="">
+              <div class="mb-2">
+                <label for="validationCustom01" class="form-label">Họ và tên</label>
+                <input type="email" class="form-control" id="validationCustom01" placeholder="Họ và tên">
+              </div>
+              <div class="mb-2">
+                <label for="validationCustom02" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationCustom02" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="validationCustom04" class="form-label">Điện thoại</label>
+                <input type="email" class="form-control" id="validationCustom04" placeholder="Điện thoại">
+              </div>
+              <select class="form-select mb-3" aria-label="Default select example" aria-label="Default select example"
+                      name="Thành Phố">
+                <option value="" selected="selected">-- Chọn tỉnh/ thành phố --</option>
+                <option value="508">Hà Nội</option>
+                <option value="485">An Giang</option>
+                <option value="486">Bà Rịa - Vũng Tàu</option>
+                <option value="487">Bạc Liêu</option>
+                <option value="488">Bắc Cạn</option>
+                <option value="489">Bắc Giang</option>
+                <option value="490">Bắc Ninh</option>
+                <option value="491">Bến Tre</option>
+                <option value="492">Bình Dương</option>
+                <option value="493">Bình Định</option>
+                <option value="494">Bình Phước</option>
+                <option value="495">Bình Thuận</option>
+                <option value="496">Cà Mau</option>
+                <option value="497">Cao Bằng</option>
+                <option value="498">Cần Thơ</option>
+                <option value="499">Đà Nẵng</option>
+                <option value="500">Đắc Lắc</option>
+                <option value="501">Đắc Nông</option>
+                <option value="502">Điện Biên</option>
+                <option value="503">Đồng Nai</option>
+                <option value="504">Đồng Tháp</option>
+                <option value="505">Gia Lai</option>
+                <option value="506">Hà Giang</option>
+                <option value="507">Hà Nam</option>
+                <option value="509">Hà Tĩnh</option>
+                <option value="510">Hải Dương</option>
+                <option value="511">Hải Phòng</option>
+                <option value="512">Hậu Giang</option>
+                <option value="513">Hòa Bình</option>
+                <option value="514">Hồ Chí Minh</option>
+                <option value="515">Hưng Yên</option>
+                <option value="516">Khánh Hoà</option>
+                <option value="517">Kiên Giang</option>
+                <option value="518">Kon Tum</option>
+                <option value="519">Lai Châu</option>
+                <option value="520">Lạng Sơn</option>
+                <option value="521">Lào Cai</option>
+                <option value="522">Lâm Đồng</option>
+                <option value="523">Long An</option>
+                <option value="524">Nam Định</option>
+                <option value="525">Nghệ An</option>
+                <option value="526">Ninh Bình</option>
+                <option value="527">Ninh Thuận</option>
+                <option value="528">Phú Thọ</option>
+                <option value="529">Phú Yên</option>
+                <option value="530">Quảng Bình</option>
+                <option value="531">Quảng Nam</option>
+                <option value="532">Quảng Ngãi</option>
+                <option value="533">Quảng Ninh</option>
+                <option value="534">Quảng Trị</option>
+                <option value="535">Sóc Trăng</option>
+                <option value="536">Sơn La</option>
+                <option value="537">Tây Ninh</option>
+                <option value="538">Thái Bình</option>
+                <option value="539">Thái Nguyên</option>
+                <option value="540">Thanh Hoá</option>
+                <option value="541">Thừa Thiên Huế</option>
+                <option value="542">Tiền Giang</option>
+                <option value="543">Trà Vinh</option>
+                <option value="544">Tuyên Quang</option>
+                <option value="545">Vĩnh Long</option>
+                <option value="546">Vĩnh Phúc</option>
+                <option value="547">Yên Bái</option>
+              </select>
+              <select class="form-select mb-3" name="Quận/Huyện">
+                <option value="" selected="selected">-- Chọn Quận/Huyện --</option>
+                <option value="72">Quận 1</option>
+                <option value="73">Quận 2</option>
+                <option value="74">Quận 3</option>
+                <option value="75">Quận 4</option>
+                <option value="76">Quận 5</option>
+                <option value="77">Quận 6</option>
+                <option value="78">Quận 7</option>
+                <option value="79">Quận 8</option>
+                <option value="80">Quận 9</option>
+                <option value="81">Quận 10</option>
+                <option value="82">Quận 11</option>
+                <option value="83">Quận 12</option>
+                <option value="84">Quận Gò Vấp</option>
+                <option value="85">Quận Tân Bình</option>
+                <option value="86">Quận Tân Phú</option>
+                <option value="87">Quận Bình Thạnh</option>
+                <option value="88">Quận Phú Nhuận</option>
+                <option value="89">Quận Thủ Đức</option>
+                <option value="90">Quận Bình Tân</option>
+                <option value="91">Huyện Củ Chi</option>
+                <option value="92">Huyện Hóc Môn</option>
+                <option value="93">Huyện Bình Chánh</option>
+                <option value="94">Huyện Nhà Bè</option>
+                <option value="95">Huyện Cần Giờ</option>
+              </select>
+              <div class="mb-2">
+                <label for="validationCustom03" class="form-label">Địa chỉ</label>
+                <input type="text" class="form-control" id="validationCustom03" required placeholder="Địa chỉ">
+                <div class="invalid-feedback">
+                  Vui lòng điền địa chỉ
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="exampleFormControlTextarea1" class="form-label">Ghi chú cho Nnail</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="payment-method mt-5 mb-5">
+            <div class="order-col mb-3">
+              <div class="fs-5"><strong>Phương thức thanh toán</strong></div>
+            </div>
+            <div class="input-radio mb-4">
+              <input type="radio" name="payment" id="payment-1">
+              <label for="payment-1" class="ms-2">
+                <span></span>
+                Thanh toán khi nhận hàng (COD)
+              </label>
+            </div>
+            <hr>
+            <div class="input-radio mb-4">
+              <input type="radio" name="payment" id="payment-2">
+              <label for="payment-2">
+                <img src="../../img/103316momopink-logo.png" style="width: 40px; height: 35px; margin-left: 10px"
+                     alt="">
+                Thanh toán online qua MOMO
+              </label>
+            </div>
+            <hr>
+            <div class="input-radio mb-4">
+              <input type="radio" name="payment" id="payment-3">
+              <label for="payment-2">
+                <img src="../../img/zalopay-logo.png" alt="" style="width: 40px; height: 35px; margin-left: 10px">
+                Thanh toán online qua Zalopay
+              </label>
+            </div>
+          </div>
+          <div class="button-group d-flex justify-content-between">
+            <button onclick="location.href='http://localhost:63342/LT_Web/Page/Home-page/home-page.html?_ijt=d0v6qlbt5hg4485mo6lliucau8&_ij_reload=RELOAD_ON_SAVE';" class="bg-secondary py-2 px-4 fw-bold rounded mb-5 border-0 text-white">Quay lại Trang chủ</button>
+            <button class="bg-primary py-2 px-4 fw-bold rounded mb-5 border-0 text-white">Xác nhận thanh toán</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div>
+          <div class="product px-3 py-5 d-flex justify-content-center">
+            <img src="../../img/monggia5.jpg" class="rounded" style="width: 230px; height: 280px" alt="Nnail">
+            <div class="title mx-5">
+              <h5>Móng giả trong suốt</h5>
+              <p>Màu: trong suốt</p>
+              <p></p>
+              <p class="text-danger fw-bold">150.000đ</p>
+              <p class="text-uppercase mt-4 fs-5">Số lượng</p>
+              <div class="d-flex button-group-count">
+                <button onclick="minius()" class="fw-bold fs-5 text-black">-</button>
+                <button id="count"></button>
+                <button onclick="add()" class="fw-bold fs-5 text-black">+</button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="product px-3 py-5 d-flex justify-content-center">
+            <img src="../../img/play1.jpg" class="rounded" style="width: 230px; height: 280px" alt="Nnail">
+            <div class="title mx-5">
+              <h5>Sơn móng tay play</h5>
+              <p>Màu: Nule</p>
+              <p>Dung tích: 50ml</p>
+              <p class="text-danger fw-bold">100.000đ</p>
+              <p class="text-uppercase mt-4 fs-5">Số lượng</p>
+              <div class="d-flex button-group-count">
+                <button onclick="minius()" class="fw-bold fs-5 text-black">-</button>
+                <button id="count1"></button>
+                <button onclick="add()" class="fw-bold fs-5 text-black">+</button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="product px-3 py-5 d-flex justify-content-center">
+            <img src="../../img/nhumong5.jpg" class="rounded" style="width: 230px; height: 280px" alt="Nnail">
+            <div class="title mx-5">
+              <h5>Nhũ trang trí móng</h5>
+              <p>Màu: </p>
+              <p>Dung tích: 50g</p>
+              <p class="text-danger fw-bold">95.000đ</p>
+              <p class="text-uppercase mt-4 fs-5">Số lượng</p>
+              <div class="d-flex button-group-count">
+                <button onclick="minius()" class="fw-bold fs-5 text-black">-</button>
+                <button id="count2"></button>
+                <button onclick="add()" class="fw-bold fs-5 text-black">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="paymenents px-3">
+
+            <div class="row mb-3">
+              <div class="col-10">
+                <input type="text" class="form-control" id="inputPassword" placeholder="Mã giảm giá">
+              </div>
+              <div class="col-2">
+                <a type="submit" class="btn btn-primary mb-3 border-0"
+                   style="background-color: #fc5332;">OK</a>
+              </div>
+            </div>
+            <div class="order-col">
+              <p class="d-flex justify-content-between fs-5"><span>Tạm tính:</span> <span>345.000 đồng</span></p>
+              <hr>
+              <p class="d-flex justify-content-between fs-5"><span>Phí ship:</span> <span>0.000 đồng</span></p>
+              <hr>
+              <p class="d-flex justify-content-between fs-5"><span>Khuyến mãi:</span> <span>0.000 đồng</span></p>
+              <hr>
+              <p class="d-flex justify-content-between fs-5"><span>Tổng cộng:</span> <span>345.000 đồng</span></p>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script lang="js" type="text/javascript" src="~/js/payment.js"></script>
+}

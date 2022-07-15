@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+    <form class="text-center mt-4 mb-5">
+      <div class="form-image py-4 px-5">
+        <h1 class=" fs-3 fw-bold text-white">Đăng nhập</h1>
+        <input type="email" class="form-control mt-5 py-2" id="staticEmail"
+               placeholder="Nhập địa chỉ email" required>
+        <input type="password" class="form-control mt-5 mb-4 py-2"
+               placeholder="Nhập mật khẩu" id="inputPassword0" required>
+        <p><a class="text-white text-decoration-none" asp-controller="Home" asp-action="ForgotPassword">
+          Quên mật khẩu?</a></p>
+        <button class="btn mt-4 mb-4 w-50 pt-2 pb-2 text-white" type="submit">Đăng nhập</button>
+        <p class="text-white mb-4">Nếu bạn chưa có tài khoản? <a class="text-danger  fw-bold text-decoration-none" asp-controller="Home" asp-action="Register">
+            Vui lòng Đăng ký</a></p>
+        <div>
+        </div>
+      </div>
+    </form>
+
