@@ -1,0 +1,161 @@
+@media screen and (max-width: 1024px){
+  .body .body-2 .product .image {
+    height: 225px !important;
+    width: 180px !important;
+    margin-left: 0px;
+    position: relative;
+
+  }
+
+  .body .body-2 .product .overlay {
+    display: none;
+  }
+
+  .body .body-2 .product .overlay-hover img {
+    display: none;
+
+  }
+
+  .body .body-2 .product .col-md-3:hover .icon-produce
+  button {
+    margin-left: 0px;
+  }
+  .body .body-2 .services .icon-service span {
+    font-family: Poppins;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+  }
+
+  .footer p {
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .footer .icon button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer .links .title a {
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+  }
+
+  .footer .contact button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer .contact .title-location h5 {
+    letter-spacing: 0.5px;
+    margin-left: 0px !important;
+  }
+  .footer .contact .title-location p {
+    letter-spacing: 0.1px;
+    font-size: 11px;
+  }
+  .footer .bi-facebook {
+    font-size: 35px;
+    margin-top: -2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    width: 43%;
+  }
+  #back-to-top {
+    margin: 30px;
+  }
+  .body .body-2 .product .image {
+    height: 190px !important;
+    width: 150px !important;
+    margin-left: -19px;
+  }
+
+  .body .body-2 .product .overlay {
+    display: none;
+  }
+
+  .body .body-2 .product .overlay-hover img {
+    display: none;
+  }
+
+  .body .body-2 .product .icon-start {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .body .body-2 .product .name-product .name {
+    font-family: Poppins;
+    font-size: 14px;
+  }
+
+  .body .body-2 .product .name-product span {
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  .body .body-2 .services .icon-service h5 {
+    letter-spacing: 0.9px;
+    font-size: 15px;
+  }
+
+  .body .body-2 .services .icon-service span {
+    font-size: 10px;
+    letter-spacing: 0.1px;
+  }
+  .footer .bi-facebook {
+    font-size: 34px;
+    margin-top: -2px;
+  }
+  .footer .contact .title-location p {
+    letter-spacing: 0.5px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .body .body-2 .product .image {
+    height: 190px !important;
+    width: 162px !important;
+    margin-left: -18px;
+  }
+
+  .body .body-2 .product .overlay {
+    display: none;
+  }
+
+  .body .body-2 .product .overlay-hover img {
+    display: none;
+  }
+
+  .body .body-2 .product .icon-start {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .body .body-2 .product .name-product {
+    margin-top: 10px !important;
+  }
+  .body .body-2 .product .name-product .name {
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  .body .body-2 .product .name-product .price {
+    margin-top: 10px !important;
+    margin-bottom: 30px;
+  }
+  .body .body-2 .product .name-product span {
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  .body .body-2 .services .icon-service h5 {
+    letter-spacing: 2px;
+    font-size: 19px;
+  }
+
+  .body .body-2 .services .icon-service span {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}

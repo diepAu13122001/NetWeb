@@ -20,5 +20,13 @@ namespace Nail_Web.Data
         public DbSet<Nail_Web.Models.Product>? Product { get; set; }
         public DbSet<Nail_Web.Models.ProductColor>? ProductColor { get; set; }
         public DbSet<Nail_Web.Models.ProductType>? ProductType { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<BillDetail>().HasNoKey();
+            builder.Entity<Cart>().HasNoKey();
+            builder.Entity<ProductColor>().HasNoKey();
+            base.OnModelCreating(builder);
+        }
     }
 }

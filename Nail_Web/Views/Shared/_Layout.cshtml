@@ -6,7 +6,7 @@
   <title>@ViewData["Title"]</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--  //link css-->
-  @RenderSection("Css")
+  @RenderSection("Css", required:false)
 </head>
 
 <body>
@@ -92,10 +92,7 @@
         </div>
       </li>
       <li class="nnail-logo">
-        <div
-          class="navbar-brand fs-2 fw-normal"
-          href="#">Nnail
-        </div>
+        <div class="navbar-brand fs-2 fw-normal" href="#">Nnail </div>
       </li>
       <li class="menu">
         <nav class="navbar navbar-expand-lg mx-auto">
@@ -141,7 +138,7 @@
             </div>
           </li>
           <li class="person">
-            <a type="button" class="btn text-decoration-none" asp-controller="MyUsers" asp-action="Index"><i
+            <a type="button" class="btn text-decoration-none" asp-controller="MyUsers" asp-action="Login"><i
               class="bi bi-person-fill"></i></a>
           </li>
           <li class="mt-1">
@@ -243,6 +240,6 @@
     </div>
   </div>
 
-@RenderSection("Scripts")
+@RenderSection("Scripts", required:false)
 </body>
 </html>

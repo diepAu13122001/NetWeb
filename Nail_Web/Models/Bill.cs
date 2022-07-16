@@ -1,7 +1,10 @@
-﻿namespace Nail_Web.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Nail_Web.Models
 {
     public class Bill
     {
+        [Key]
         public int Bll_Id { get; set; }
         public int? Bll_UsrId { get; set; }
         public int? Bll_AdsID { get; set; }

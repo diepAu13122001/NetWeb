@@ -1,7 +1,10 @@
-﻿namespace Nail_Web.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Nail_Web.Models
 {
     public class Discount
     {
+        [Key]
         public int Dsc_Id { get; set; }
         public string? Dsc_Name { get; set; }
         public int? Dsc_MaxDiscount { get; set; }

@@ -1,4 +1,6 @@
-﻿namespace Nail_Web.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Nail_Web.Models
 {
     public class BillDetail
     {

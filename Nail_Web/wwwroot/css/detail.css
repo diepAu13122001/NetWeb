@@ -1,0 +1,225 @@
+.detail-product .slideshow .slide-image {
+  width: 550px !important;
+  height: 550px !important;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #f1ebec;
+}
+.detail-product .slideshow {
+  width: 550px !important;
+  height: 680px !important;
+}
+.slick-dots li img {
+  height: 110px !important;
+  width: 110px !important;
+  border: 1px solid #f1ebec;
+  border-radius: 3px;
+}
+
+.slick-dots li {
+  height: 120px;
+  width: 110px;
+  background: #fff ;
+}
+
+.slick-dots {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex !important; ;
+  margin-top: 0px !important;
+  left: -5%;
+}
+
+.slick-dotted.slick-slider {
+
+}
+.colors {
+  border: 1px solid #cec9c9;
+  width: 150px;
+  margin:10px;
+}
+.button-group-count button {
+border: 1px solid #cec9c9;
+  height: 40px;
+  width: 50px;
+  margin: 2px;
+}
+.cart-bought .buy:focus, .cart-bought .buy:hover {
+  border: 1px solid #d00a2b !important;
+  background: red;
+}
+.cart-bought .buy {
+  border: 1px solid #e68998 !important;
+  background: #f55f79;
+}
+.cart-bought .cart:focus, .cart-bought .cart:hover {
+  border: 1px solid #e3d309 !important;
+  background: #f29005;
+}
+.cart-bought .cart {
+  border: 1px solid #fbd608 !important;
+  background: #f1cc25;
+}
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  border: none;
+  background: none;
+}
+
+.slide-arrow .bi {
+  color:#e9a0b4;
+  font-size: 30px;
+}
+
+.prev-arrow {
+  left: -50px;
+}
+
+.next-arrow {
+  right: -45px;
+}
+
+.slick-product .slide-product img {
+  width: 250px !important;
+  height: 265px;
+  margin: 5px;
+  border: 2px solid #f7bbcc !important;
+}
+
+.slick-product .slide-product {
+  width: 85%;
+}
+.introduction p {
+  font-weight: 400;
+  font-family: Arial;
+  font-size: 15px;
+}
+.introduction span {
+  font-weight: 600;
+  font-family: Arial;
+  font-size: 15px;
+}
+.image-detail img {
+  width: 80%;
+}
+@media screen and (max-width: 768px){
+  .prev-arrow {
+    left: -31px;
+  }
+
+  .next-arrow {
+    right: -20px;
+  }
+  .slick-product .slide-product img {
+   margin-left: 15px;
+    width: 320px !important;
+    height: 330px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .detail-product .slideshow .slide-image {
+    width: 460px !important;
+    height: 450px !important;
+  }
+  .detail-product .slideshow {
+    width: 460px !important;
+    height: 580px !important;
+  }
+  .slick-dots li img {
+    height: 90px !important;
+    width: 90px !important;
+  }
+  .slick-product .slide-product img {
+    width: 200px !important;
+    height: 225px;
+  }
+  .prev-arrow {
+    left: -50px;
+  }
+
+  .next-arrow {
+    right: -45px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .detail-product .slideshow .slide-image {
+    width: 380px !important;
+    height: 400px !important;
+  }
+  .detail-product .slideshow {
+    width: 380px !important;
+    height: 500px !important;
+  }
+  .slick-dots li img {
+    height: 68px !important;
+    width: 68px !important;
+  }
+  .slick-dots {
+    left: 0%;
+  }
+  .colors {
+    border: 1px solid #cec9c9;
+    width: 120px;
+    margin: 10px;
+    font-size: 12px !important;
+  }
+  .cart-bought .cart, .cart-bought .buy {
+   font-size: 12px !important;
+  }
+  .slick-product .slide-product img {
+    width: 200px !important;
+    height: 225px;
+  }
+  .prev-arrow {
+    left: -40px;
+  }
+
+  .next-arrow {
+    right: -40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .detail-product .slideshow .slide-image {
+    width: 300px !important;
+    height: 290px !important;
+  }
+  .detail-product .slideshow {
+    width: 300px !important;
+    height: 400px !important;
+  }
+  .slick-dots li img {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .slick-dots {
+    left: 0%;
+    margin-top: 50px;
+  }
+  .title-image h5, .title-image {
+    margin-top: 0px !important;
+  }
+  .colors {
+    border: 1px solid #cec9c9;
+    width: 120px;
+    margin: 10px;
+    font-size: 12px !important;
+  }
+  .cart-bought .cart, .cart-bought .buy {
+    font-size: 12px !important;
+  }
+  .slick-product .slide-product img {
+    width: 250px !important;
+    height: 245px;
+  }
+  .prev-arrow {
+    left: -30px;
+  }
+
+  .next-arrow {
+    right: -18px;
+  }
+}

@@ -4,6 +4,7 @@ namespace Nail_Web.Models
 {
     public class MyUser
     {
+        [Key]
         public int Usr_Id { get; set; }
         public string? Usr_FirstName { get; set; }
         public string? Usr_LastName { get; set; }

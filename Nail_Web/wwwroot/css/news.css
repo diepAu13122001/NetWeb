@@ -1,0 +1,22 @@
+
+.viewmore{
+  display: block;
+  margin: 15px 0;
+}
+.viewmore a{
+  display: inline-block;
+  background: linear-gradient(to bottom right, blue , purple);
+  color: black;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.blog-image img {
+  width: 450px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .blog-image img {
+    width: 350px;
+    height: auto;
+  }
+}

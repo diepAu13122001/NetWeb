@@ -1,0 +1,227 @@
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    top: 31%;
+    margin-left: 4px;
+  }
+
+  .carousel .carousel-inner .carousel-item h1 {
+    line-height: 70px;
+    font-family: Poppins;
+    font-size: 55px;
+  }
+
+  .carousel .carousel-inner .carousel-item p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .body .body-1 .parent img {
+    width: 320px;
+    height: 270px;
+  }
+
+  .body .body-1 .name h5 {
+    font-size: 25px;
+  }
+
+  .body .body-1 .name p {
+    font-size: 12px;
+  }
+
+  .body .body-1 button {
+    height: 38px;
+    width: 110px;
+    margin-top: 136px;
+    padding: 10px 12px;
+  }
+  .slick-product .slide-product img {
+    width: 218px !important;
+    height: 230px;
+  }
+}
+
+/*Ipad ngang(768 )*/
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .carousel-item img {
+    max-width: 100%;
+    height: 530px;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    top: 31%;
+    margin-left: 4px;
+  }
+
+  .carousel .carousel-inner .carousel-item h1 {
+    line-height: 50px;
+    font-family: Poppins;
+    font-size: 45px;
+  }
+
+  .carousel .carousel-inner .carousel-item p {
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 10px;
+  }
+
+  .body .body-1 .parent img {
+    width: 230px;
+    height: 210px;
+  }
+  .body .body-1 .categoty {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .body .body-1 .name h5 {
+    font-size: 19px;
+  }
+  .body .body-1 .title .image {
+    height: 250px;
+    width: 250px;
+  }
+  .body .body-1 .name p {
+    font-size: 10px;
+  }
+
+  .body .body-1 button {
+    height: 40px !important;
+    width: 100px !important;
+    margin-top: 103px !important;
+    padding: 3px 8px 5px 8px !important;
+  }
+
+  .body .body-1 button a {
+    font-size: 12px;
+  }
+  .footer .bi-facebook {
+    font-size: 34px;
+    margin-top: -2px;
+  }
+  .footer .contact .title-location p {
+    letter-spacing: 0.5px;
+    font-size: 12px;
+  }
+  .slick-product .slide-product img {
+    width: 217px !important;
+    height: 215px;
+  }
+  .slick-product .slide-product {
+    width: 80%;
+  }
+  .prev-arrow {
+    left: -60px;
+  }
+
+  .next-arrow {
+    right: -60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel .carousel-inner .carousel-item img {
+    max-width: 100%;
+    height: 340px;
+  }
+  .carousel .carousel-control-prev, .carousel .carousel-control-next {
+    background-color: #f196af;
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    opacity: 0.8;
+  }
+
+  .carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover {
+    background-color: #333;
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    opacity: 1;
+  }
+
+  .body .body-1 .parent img {
+    width: 348px !important;
+    height: 260px;
+  }
+
+  .body .body-1 .name h5 {
+    font-size: 32px;
+    margin-top: 3px;
+    margin-left: 32px !important;
+  }
+
+  .body .body-1 .name p {
+    color: #999;
+    font-size: 14px;
+    margin-top: 71px;
+    margin-left: 32px !important;
+  }
+
+  .body .body-1 button {
+    padding: 10px 20px;
+    height: 48px;
+    width: 120px;
+    margin-top: 150px !important;
+    margin-left: 32px !important;
+  }
+
+  .body .body-1 button a {
+    font-size: 12px;
+  }
+
+  .slick-dots li img {
+    height: 55px;
+    width: 55px;
+  }
+  .slick-dots .slick-active img {
+    height: 65px;
+    width: 65px;
+  }
+  .slick-dots li {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    height: 45px;
+    width: 45px;
+  }
+  .slick-dots {
+    bottom: 528px;
+  }
+  .body .body-1 .categoty {
+    background-color: #e9a0b4;
+    height: 35px;
+    width: 120px;
+    font-family: Poppins;
+    font-size: 14px;
+    /*margin-left: 35px;*/
+  }
+  .slick-product .slide-product img {
+    width: 255px !important;
+    height: 250px;
+    margin: 0px;
+  }
+  .slick-product .slide-product {
+    width: 75%;
+    text-align: center;
+  }
+  .prev-arrow {
+    left: -45px;
+  }
+
+  .next-arrow {
+    right: -45px;
+  }
+  .body-1 .title .categoty {
+    width: 76px !important;
+    margin: auto;
+    padding: 0px !important;
+    font-size: 12px;
+    align-items: center;
+  }
+  .body .body-3 {
+    background: none;
+  }
+  .body-4 #video-slide video {
+    width: 100% !important;
+    height: 300px;
+    border: none !important;
+  }
+}

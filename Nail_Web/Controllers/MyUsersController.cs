@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,12 +15,16 @@ namespace Web.Controllers
     public class MyUsersController : Controller
     {
         private readonly ApplicationDbContext _context;
-
-        public MyUsersController(ApplicationDbContext context)
+        private readonly UserManager<Login> _userMnager;
+        private readonly SignInManager<Login> _signinMnager;
+        public MyUsersController(UserManager<Login> userMnager,SignInManager<Login> signinMnager, ApplicationDbContext context)
         {
             _context = context;
+            _userMnager = userMnager;
+            _signinMnager = signinMnager;
         }
 
+        [Authorize]
         // GET: MyUsers
         public async Task<IActionResult> Index()
         {
@@ -45,26 +51,35 @@ namespace Web.Controllers
             return View(myUser);
         }
 
-        // GET: MyUsers/Create
-        public IActionResult Create()
+        // GET: MyUsers/Login
+        public IActionResult Login()
         {
             return View();
         }
 
-        // POST: MyUsers/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: MyUsers/Login
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Usr_Id,Usr_FirstName,Usr_LastName,Usr_IsAdmin,Usr_UserName,Usr_Password,Usr_PhoneNum,Usr_Email,Usr_Gender")] MyUser myUser)
+        public async Task<IActionResult> Login(Login login)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(myUser);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                _context.Add(login);
+                var user = await _userMnager.FindByNameAsync(login.Lgn_UserName);
+                if (user != null)
+                {
+                    var passwordCheck = await _userMnager.CheckPasswordAsync(user, login.Lgn_Password);
+                    if (passwordCheck)
+                    {
+                        var result = await _signinMnager.PasswordSignInAsync(user, login.Lgn_Password, false, false);
+                        if (result.Succeeded)
+                        {
+                            return RedirectToAction("Index", "Home");
+                        }
+                    }
+                    TempData["Error"] = "Wrong credentials. Please, try again";
+                    return View(login);
+                }
             }
-            return View(myUser);
         }
 
         // GET: MyUsers/Edit/5

@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Nail_Web.Data;
 using Nail_Web.Models;
+using NUnit.Framework;
 
 namespace Web.Controllers
 {
@@ -25,7 +27,8 @@ namespace Web.Controllers
              return View();
         }
 
-        public IActionResult Cart()
+        [Authorize]
+        public IActionResult Cart(int? Usr_Id)
         {
             return View();
         }

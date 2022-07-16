@@ -1,0 +1,230 @@
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  .top-menu .form form .form-control {
+    width: 210px;
+    margin-right: -38px;
+  }
+
+  .top-menu .nnail-logo {
+    width: 15%;
+  }
+
+  .top-menu .menu {
+    width: 0%;
+  }
+
+  .top-menu .menus {
+    width: 45%;
+    display: block;
+  }
+
+  .top-menu .menus button {
+    outline-style: none;
+    box-shadow: none;
+  }
+
+  .top-menu .menus .nav-link {
+    color: #222222;
+    font-weight: 300;
+    font-family: Corbel;
+    margin-bottom: 5px;
+  }
+
+  .top-menu .menus .nav-link:hover {
+    color: #fff;
+    background: #ed8899 !important;
+  }
+
+  .top-menu .secartson {
+    width: 40%;
+  }
+
+  .top-menu .form form:hover .form-control {
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .nnail-logo {
+    /*margin-left: 178px;*/
+  }
+
+  .navbar-brand {
+    text-align: center;
+  }
+
+  .top-menu .bi {
+    font-size: 23px;
+  }
+
+  .bi-person-fill {
+    margin-bottom: 2px;
+  }
+
+  .top-menu .form .btn {
+    margin-top: 1px;
+    margin-right: -15px;
+    margin-left: 0px;
+  }
+
+  .top-menu .fa-list-ul {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e9a0b4;
+    margin-top: 10px;
+  }
+
+  .top-menu .list {
+    display: block;
+    padding: 5px 6px 3px 6px;
+  }
+
+  .top-menu .fa-list-ul:hover {
+    color: #d9566b;
+  }
+
+  .top-menu .btn:focus {
+    box-shadow: none;
+  }
+
+  .top-menu .menus .offcanvas .navbar {
+    display: block !important;
+  }
+
+  .top-menu .person {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+
+  .top-menu .secartson {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .top-menu .form form .form-control {
+    width: 170px;
+  }
+
+  .top-menu .bi {
+    font-size: 20px;
+  }
+
+  #back-to-top {
+    bottom: 30px;
+    right: -5px;
+  }
+
+  #back-to-top .bi {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top-menu .form form .form-control {
+    width: 170px;
+  }
+
+  .top-menu .bi {
+    font-size: 20px;
+  }
+
+  .top-menu .fa-list-ul {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e9a0b4;
+    margin-top: 5px;
+    margin-left: -10px;
+  }
+
+  .top-menu .nnail-logo {
+    width: 10%;
+  }
+
+  .top-menu .menu {
+    width: 0%;
+  }
+
+  .top-menu .menus {
+    width: 30%;
+    display: block;
+  }
+
+  .top-menu .secartson {
+    width: 50%;
+  }
+
+  .top-menu .person {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: -3px;
+  }
+
+  .top-menu .secartson {
+    margin-left: 0px;
+    margin-right: 2px;
+  }
+
+  .top-menu .cart {
+    margin-top: 0px;
+  }
+
+  .top-menu .form form .form-control, .top-menu .form form .btn {
+    display: none;
+  }
+
+  .bi {
+    margin: 0px;
+  }
+
+  .top-menu .menus .offcanvas {
+    max-width: 50% !important;
+  }
+
+  .top-menu .menus .offcanvas .offcanvas-body .nav-link {
+    font-size: 16px !important;
+    padding: 5px;
+  }
+
+  .top-menu .menus .offcanvas .offcanvas-body .dropdown-item {
+    font-size: 14px !important;
+    padding: 5px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+  .modal-content .modal-body input {
+    width: 200px;
+    margin: auto;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 10px 8px 9px 8px
+  }
+
+  .modal-footer button {
+    line-height: 15px;
+  }
+
+  #back-to-top {
+    bottom: 30px;
+    right: -10px;
+  }
+
+  #back-to-top .bi {
+    font-size: 20px;
+  }
+  .top-menu .secartson .cart span {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin-left: 7px;
+  }
+}
+

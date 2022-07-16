@@ -1,0 +1,31 @@
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  border: none;
+  background: none;
+}
+
+.slide-arrow .bi {
+  color:#e9a0b4;
+  font-size: 30px;
+}
+
+.prev-arrow {
+  left: -50px;
+}
+
+.next-arrow {
+  right: -50px;
+}
+
+.slick-product .slide-product img {
+  width: 287px !important;
+  height: 300px;
+  border: 2px solid #f7bbcc !important;
+}
+
+.slick-product .slide-product {
+  width: 85%;
+}
+

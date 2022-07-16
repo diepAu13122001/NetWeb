@@ -1,0 +1,88 @@
+.register {
+  background-image: url("../../img/mt-1035-content-bg01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: unset;
+}
+
+.form-image {
+  width: 32%;
+  height: 70%;
+  margin: auto;
+  margin-top: 13px;
+  background-image: linear-gradient(to right, rgba(14, 42, 251, 0.3), rgba(239, 0, 255, 0.3));
+  border-radius: 8px !important;
+  border: 2px solid #e617fc;
+}
+.form-image:hover {
+  background-image: linear-gradient(to right, rgba(6, 32, 223, 0.3), rgba(235, 8, 251, 0.3));
+  border-radius: 8px !important;
+  border: 2px solid #ca03e3;
+}
+.btn {
+  background-image: linear-gradient(to right, rgba(0, 31, 255, 0.9), rgba(239, 0, 255, 0.9));
+  border: 1px solid #e9d88b;
+}
+input {
+  border: 1px solid #b6f7f8 !important;
+}
+.btn:hover {
+  background-image: linear-gradient(to right, rgba(17, 44, 242, 0.5), rgba(204, 11, 217, 0.5));
+  border: 1px solid #fef8e1;
+}
+input:hover {
+  border: 1px solid #22f8fc !important;
+  box-shadow: 1px 1px 1px 0px #a7f8c6 !important;
+}
+input, .btn {
+  border-radius: 8px !important;
+}
+h1:hover {
+  color: #e9f7f5 !important;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: Corbel !important;
+  color: #000;
+}
+span {
+  color: #e9a0b4;
+  font-family: cursive;
+  font-weight: 400;
+  margin-left: 5px;
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  .register {
+    height: 60vh;
+    background-size: contain;
+  }
+  .form-image {
+    width: 50%;
+    height: 100%;
+    margin-top: 100px;
+  }
+  h2 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .register {
+    height: 60vh;
+    background-size: contain;
+  }
+  .form-image {
+    width: 80%;
+    height: 100%;
+    margin-top: 100px;
+  }
+  h2 {
+    margin-top: 50px;
+  }
+}
+
+
+
+
+

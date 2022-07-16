@@ -87,53 +87,7 @@
     <div class=" mb-5">
       <div class="product mt-5 container text-center">
         <div class="w-100 row" id="cart-product">
-                   @foreach (var item in Model)
-                    {
-                        <div class="col-md-3 col-6">
-                <div class="icon-produce position-absolute d-block">
-                  <div class="w3-container">
-                    <button class="icon-eye border-0 bg-white mt-3 w3-animate-right">
-                     <i class="bi bi-eye">
-                    </i>
-                    </button>
-                  </div>
-                  <div class="w3-container">
-                    <button class="icon-heart border-0 bg-white mt-1 w3-animate-right">
-                        <i class= "bi bi-heart" ></i>
-                    </button>
-                  </div>
-                </div>
-               <div class="container">
-               <a asp-action="ProductDetail" asp-route-id="@item.Prd_Id">
-                 <img src="@Html.DisplayFor(modelItem => item.Prd_AvaUrl)" alt="Nnail" class="image">
-                <div class="overlay">
-                  <img src="@Html.DisplayFor(modelItem => item.Prd_AvaUrl)" alt="Nnail">
-                </div>
-                </a>
-                </div>
-                  <div class="icon-start d-flex justify-content-center">
-                                @for (var i = 0; i <  item.GetRating(item.Prd_Id); i++)
-                                {
-                                     <i class="bi-star-fill text-warning mx-1"></i>
-                                }
-                  </div>
-                <div class="name-product mt-2 text-center">
-                  <span class="name text-dark fw-normal">@Html.DisplayFor(modelItem => item.Prd_Name.Substring(0, 10))...</span>
-                  <div class="price mt-4">
-                    <span class="old-price fw-normal text-decoration-line-through">
-                      @{item.getMinUnitPrice(item.Prd_Id);}đ
-                    </span>
-                    <span class="new-price ms-2">
-                      @{item.getRealPrice(item.Prd_Id);}đ
-                    </span>
-                  </div>
-                  <div class="w3-container mb-5">
-                    <button class="w3-center w3-animate-bottom add-to-cart border-0 position-absolute ms-5">
-                      <a class="text-decoration-none text-uppercase text-white" asp-controller="Bills" asp-action="Cart">add to cart</a></button>
-                  </div>
-                </div>
-              </div>
-                    } 
+             @ViewData["AllList"]           
         </div>
       </div>
       <div class="view-more w-100 body">
